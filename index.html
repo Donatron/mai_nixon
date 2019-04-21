@@ -73,13 +73,15 @@
         >
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a class="nav-link jump" href="#about">About Me</a>
+              <a class="nav-link" href="#about" id="aboutLink">About Me</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link jump" href="#portfolio">Portfolio</a>
+              <a class="nav-link" href="#portfolio" id="portfolioLink"
+                >Portfolio</a
+              >
             </li>
             <li class="nav-item">
-              <a class="nav-link jump" href="#contact">Contact</a>
+              <a class="nav-link" href="#contact" id="contactLink">Contact</a>
             </li>
             <li class="nav-item">
               <a
@@ -161,7 +163,7 @@
             passionate about physical fitness and keeping herself in the best
             physical shape.
           </h5>
-          <div class="row">
+          <div class="row" id="portfolio">
             <div class="col-md-6 ml-auto mr-auto">
               <h4 class="title text-center">My Portfolio</h4>
               <div class="nav-align-center">
@@ -221,7 +223,7 @@
               </div>
             </div>
             <!-- Tab panes -->
-            <div class="tab-content gallery" id="portfolio">
+            <div class="tab-content gallery">
               <!-- Modeling -->
               <div class="tab-pane active" id="home" role="tabpanel">
                 <div class="col-md-10 ml-auto mr-auto">
@@ -588,6 +590,6 @@
     ></script>
     <!-- Lightbox JS -->
     <script src="./assets/js/plugins/lightbox.min.js"></script>
-    <script src="./assets/js/script.js" type="module"></script>
+    <script src="./assets/js/main-bundle.js" type="module"></script>
   </body>
 </html>
