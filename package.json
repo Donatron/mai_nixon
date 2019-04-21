@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "deploy": "gh-pages -d /"
   },
   "repository": {
     "type": "git",
@@ -16,8 +16,6 @@
   "bugs": {
     "url": "https://github.com/Donatron/mai_nixon/issues"
   },
-  "homepage": "https://github.com/Donatron/mai_nixon#readme",
-  "dependencies": {
-    "gh-pages": "^2.0.1"
-  }
+  "homepage": "https://github.com/Donatron/mai_nixon",
+  "dependencies": {}
 }
