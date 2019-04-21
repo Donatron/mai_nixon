@@ -1,5 +1,5 @@
 .collections:hover img {
-  transform: scale(0.8);
+  transform: scale(0.9);
   opacity: 0.3;
 }
 
@@ -10,14 +10,5 @@
 }
 
 .collections img {
-  transition: all 0.3s ease-out;
+  transition: all 0.5s ease-out;
 }
-
-/* .btn-primary {
-  background-color: red;
-}
-
-.bg-primary {
-  background-color: purple !important;
-  opacity: 0.9;
-} */
