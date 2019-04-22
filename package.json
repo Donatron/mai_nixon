@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "dev": "webpack-dev-server --config webpack.config.js",
     "build": "webpack --config webpack.config.js",
     "deploy": "gh-pages -d /"
   },
@@ -19,6 +20,7 @@
   },
   "homepage": "https://github.com/Donatron/mai_nixon",
   "dependencies": {
+    "gsap": "^2.1.2",
     "jump.js": "^1.0.2",
     "nodemailer": "^6.1.1"
   },

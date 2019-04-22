@@ -35,6 +35,14 @@
   </head>
 
   <body class="profile-page sidebar-collapse">
+    <!-- Add page cover to hide content while DOM loading -->
+    <div
+      id="cover"
+      style="width:100%;height:100vh;background-color:#fff;z-index:10000;display:flex;justify-content: center;align-items: center;"
+    >
+      <img src="./img/loading.gif" alt="" />
+    </div>
+
     <!-- Navbar -->
     <nav
       class="navbar navbar-expand-lg bg-primary fixed-top navbar-transparent "
@@ -42,14 +50,7 @@
     >
       <div class="container">
         <div class="navbar-translate">
-          <a
-            class="navbar-brand"
-            href="#top"
-            rel="tooltip"
-            title="Designed by Invision. Coded by Creative Tim"
-            data-placement="bottom"
-            target="_blank"
-          >
+          <a class="navbar-brand" href="#top" id="nav-title">
             Mai Nixon
           </a>
           <button
@@ -114,7 +115,7 @@
       </div>
     </nav>
     <!-- End Navbar -->
-    <div class="wrapper">
+    <div class="wrapper" style="visibility: hidden">
       <div class="page-header clear-filter" filter-color="orange" id="top">
         <div
           class="page-header-image"
@@ -122,12 +123,14 @@
           style="background-image:url('./img/modeling/IMG_01.jpg');"
         ></div>
         <div class="container">
-          <div class="photo-container">
+          <div class="photo-container" id="profile-pic">
             <img src="./img/modeling/IMG_02.jpg" alt="" />
           </div>
           <h3 class="title">Mai Nixon</h3>
           <p class="category">
-            Fitness Professional | Model | Muay Thai Competitor
+            <span id="fitness-title">Fitness Professional | </span>
+            <span id="model-title">Model</span>
+            <span id="muay-thai-title"> | Muay Thai Competitor</span>
           </p>
         </div>
       </div>
@@ -156,13 +159,15 @@
               <i class="fab fa-instagram"></i>
             </a>
           </div>
-          <h3 class="title" id="about">About me</h3>
-          <h5 class="description">
-            A model of considerable range, Mai is equally at home modeling
-            lingerie, evening wear or street wear. In her spare time, Mai is
-            passionate about physical fitness and keeping herself in the best
-            physical shape.
-          </h5>
+          <div id="about">
+            <h3 class="title">About me</h3>
+            <h5 class="description">
+              A model of considerable range, Mai is equally at home modeling
+              lingerie, evening wear or street wear. In her spare time, Mai is
+              passionate about physical fitness and keeping herself in the best
+              physical shape.
+            </h5>
+          </div>
           <div class="row" id="portfolio">
             <div class="col-md-6 ml-auto mr-auto">
               <h4 class="title text-center">My Portfolio</h4>
@@ -249,8 +254,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/modeling/IMG_03.jpg"
                         data-lightbox="galleryOne"
@@ -271,8 +274,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/modeling/IMG_05.jpg"
                         data-lightbox="galleryOne"
@@ -283,6 +284,8 @@
                           class="img-raised"
                         />
                       </a>
+                    </div>
+                    <div class="col-md-6">
                       <a
                         href="./img/modeling/IMG_06.jpg"
                         data-lightbox="galleryOne"
@@ -293,8 +296,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/modeling/IMG_07.jpg"
                         data-lightbox="galleryOne"
@@ -315,8 +316,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/modeling/IMG_09.jpg"
                         data-lightbox="galleryOne"
@@ -393,8 +392,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/muay-thai/image3.jpg"
                         data-lightbox="galleryThree"
@@ -437,8 +434,6 @@
                           class="img-raised"
                         />
                       </a>
-                    </div>
-                    <div class="col-md-6">
                       <a
                         href="./img/muay-thai/image7.jpg"
                         data-lightbox="galleryThree"
