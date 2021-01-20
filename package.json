@@ -21,7 +21,7 @@
   "homepage": "https://github.com/Donatron/mai_nixon",
   "proxy": "http://localhost:3000/",
   "dependencies": {
-    "gsap": "^2.1.2",
+    "gsap": "^3.6.0",
     "jump.js": "^1.0.2"
   },
   "devDependencies": {
